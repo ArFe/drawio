@@ -1,7 +1,8 @@
 <shapes name="mxgraph.electrical.iec_logic_gates">
 	<shape aspect="variable" h="80" name="AND" strokewidth="inherit" w="60">
 		<connections>
-			<constraint name="in" perimeter="0" x="0" y="0.5"/>
+			<constraint name="in1" perimeter="0" x="0" y="0.25"/>
+			<constraint name="in2" perimeter="0" x="0" y="0.75"/>
 			<constraint name="out" perimeter="0" x="1" y="0.5"/>
 		</connections>
 		<background>

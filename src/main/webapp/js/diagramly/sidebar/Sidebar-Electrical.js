@@ -23,12 +23,15 @@
 		var mew = 'pointerEvents=1;' + s + '=mxgraph.electrical.waveforms.';
 		var mein = 'perimeter=ellipsePerimeter;' + s + '=mxgraph.electrical.instruments.';
 		var meiecl = s + '=mxgraph.electrical.iec_logic_gates.';
+		var mebannerl = s + '=mxgraph.electrical.banner.';
 		var merm = s + '=mxgraph.electrical.rot_mech.';
 		var metr = s + '=mxgraph.electrical.transmission.';
 		var gnmel = 'mxgraph.electrical.logic_gates';
 		var dtmel = 'electrical logic gate ';
-		var gnmeiecl = 'mxgraph.electrical.iec_logic_gates';
-		var dtmeiecl = 'electrical iec logic gate ';
+		var gnmeiecl = 'mxgraph.electrical.banner';
+		var dtmeiecl = 'electrical banner components ';
+		var gnmebannerl = 'mxgraph.electrical.iec_logic_gates';
+		var dtmebannerl = 'electrical iec logic gate ';
 		var gnmere = 'mxgraph.electrical.resistors';
 		var dtmere = 'electrical resistor ';
 		var gnmec = 'mxgraph.electrical.capacitors';
@@ -91,6 +94,12 @@
 			this.createVertexTemplateEntry(meiecl + 'nor;', 66, 80, '', 'NOR (IEC)', null, null, this.getTagsForStencil(gnmeiecl, 'nor', dtmeiecl).join(' ')),
 			this.createVertexTemplateEntry(meiecl + 'not;', 66, 80, '', 'NOT (IEC)', null, null, this.getTagsForStencil(gnmeiecl, 'xor', dtmeiecl).join(' ')),
 			this.createVertexTemplateEntry(meiecl + 'xor;', 60, 80, '', 'XOR (IEC)', null, null, this.getTagsForStencil(gnmeiecl, 'xor', dtmeiecl).join(' ')),
+			this.createVertexTemplateEntry(mebannerl + 'and;', 60, 80, '', 'AND (BANNER)', null, null, this.getTagsForStencil(gnmebannerl, 'and', dtmebannerl).join(' ')),
+			this.createVertexTemplateEntry(mebannerl + 'nand;', 66, 80, '', 'NAND (BANNER)', null, null, this.getTagsForStencil(gnmebannerl, 'nand', dtmebannerl).join(' ')),
+			this.createVertexTemplateEntry(mebannerl + 'or;', 60, 80, '', 'OR (BANNER)', null, null, this.getTagsForStencil(gnmebannerl, 'or', dtmebannerl).join(' ')),
+			this.createVertexTemplateEntry(mebannerl + 'nor;', 66, 80, '', 'NOR (BANNER)', null, null, this.getTagsForStencil(gnmebannerl, 'nor', dtmebannerl).join(' ')),
+			this.createVertexTemplateEntry(mebannerl + 'not;', 66, 80, '', 'NOT (BANNER)', null, null, this.getTagsForStencil(gnmebannerl, 'xor', dtmebannerl).join(' ')),
+			this.createVertexTemplateEntry(mebannerl + 'xor;', 60, 80, '', 'XOR (BANNER)', null, null, this.getTagsForStencil(gnmebannerl, 'xor', dtmebannerl).join(' ')),
 			this.createVertexTemplateEntry(
 					'shadow=0;dashed=0;align=center;html=1;strokeWidth=1;shape=mxgraph.electrical.logic_gates.dual_inline_ic;labelNames=a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t;', 
 					100, 200, 'IC', 'Dual In-Line IC', null, null, this.getTagsForStencil(gnmel, 'dual inline in line ic integrated circuit', dtmel).join(' ')),

@@ -1,4 +1,4 @@
-<shapes name="mxgraph.electrical.banner">
+<shapes name="banner">
 	<shape aspect="variable" h="80" name="AND" strokewidth="inherit" w="60">
 		<connections>
 			<constraint name="in1" perimeter="0" x="0" y="0.25"/>

@@ -1077,7 +1077,9 @@
 		currentPage = (currentPage != null) ? currentPage : false;
         uncompressed = (uncompressed != null) ? uncompressed : !Editor.compressXml;
         console.log("I'm here!");
+        console.log("uncompressed = " + uncompressed);
 		uncompressed = true;
+        console.log("uncompressed = " + uncompressed);
 		// Generats graph model XML node for single page export
 		var node = this.editor.getGraphXml(ignoreSelection);
 		
@@ -1154,7 +1156,7 @@
 				}
 			}
 		}
-        console.log(node.toString());
+        console.log(JSON.stringify(node));
 		return node;
 	};
 	
